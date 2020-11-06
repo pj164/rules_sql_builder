@@ -1,0 +1,32 @@
+[
+  {
+    "control_name": "Control_1",
+    "source_table_name": "control_1",
+    "rules": {
+      "and": [
+          {
+            "field_name": "Control_1.email",
+            "operator": "equals",
+            "field_value": "tomato"
+          },
+          {
+            "field_name": "Control_1.email",
+            "operator": "equals",
+            "field_value": "potato"
+          }
+      ],
+      "or": [
+         {
+            "field_name": "Control_1.client_id",
+            "operator": ">",
+            "field_value": "34"
+          },
+          {
+            "field_name": "Control_1.email",
+            "operator": "equals",
+            "field_value": "tomato"
+          }
+      ]
+    }
+  }
+]
